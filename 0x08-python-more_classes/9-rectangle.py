@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """Represents a rectangle"""
+    """Represents of a rectangle"""
 
     number_of_instances = 0
     print_symbol = "#"
@@ -34,6 +34,7 @@ class Rectangle:
         """prints a string when an instance has been deleted"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+
     @property
     def width(self):
         """getter for private instance attribute width"""
@@ -63,11 +64,11 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """returns area of the rectangle"""
+        """returns the area of rectangle"""
         return self.__width * self.__height
 
     def perimeter(self):
-        """returns perimeter of the rectangle"""
+        """returns the perimeter of rectangle"""
         if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width * 2) + (self.__height * 2)
@@ -81,5 +82,5 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        """returns a string representation of rectangle for reproduction"""
+        """returns string representation of the rectangle for reproductiion"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
