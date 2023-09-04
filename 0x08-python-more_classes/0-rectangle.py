@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-
-"""prints empty rectangle"""
+"""Defines an empty class Rectangle"""
 
 
 class Rectangle:
-	"""empty rectangle"""
-	pass
+    """Empty representation of a rectangle"""
+    pass
