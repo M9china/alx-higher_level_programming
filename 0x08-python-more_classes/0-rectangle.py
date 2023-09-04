@@ -3,7 +3,6 @@
 """prints empty rectangle"""
 
 class Rectangle:
-
-	 """rectangle"""
+	"""rectangle"""
 
 	pass
