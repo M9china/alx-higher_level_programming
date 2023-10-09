@@ -1,12 +1,3 @@
-# 101-lazy_matrix_mul.txt
-
-=================================
-How to Use 101-lazy_matrix_mul.py
-=================================
-
-This module defines a matrix multiplication function
-``lazy_matrix_mul(m_a, m_b)``.
-
 Usage
 =====
 

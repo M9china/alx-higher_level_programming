@@ -1,15 +1,29 @@
 #!/usr/bin/python3
-"""
-This is the "4-print_square" module.
-The 4-print_square  module supplies one function, print_square(size).
-"""
+"""Defining a function text_indentation"""
 
 
-def print_square(size):
-    """prints a square with "#"'s that has a length of size """
-    if type(size) is not int:
-        raise TypeError("size must be an integer")
-    if size < 0:
-        raise ValueError("size must be >= 0")
-    if size > 0:
-        print(("#" * size + "\n") * size, end="")
+def text_indentation(text):
+    """Prints Text with 2 lines after ['.', '?', and ':'.]
+
+    Args:
+        text (string): Printed Text.
+    Raises:
+        TypeError: Text not string.
+    """
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+
+    c = 0
+    while c < len(text) and text[c] == ' ':
+        c += 1
+
+    while c < len(text):
+        print(text[c], end="")
+        if text[c] == "\n" or text[c] in ".?:":
+            if text[c] in ".?:":
+                print("\n")
+            c += 1
+            while c < len(text) and text[c] == ' ':
+                c += 1
+            continue
+        c += 1
