@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Contains the inherits_from function"""
+"""
+Contains the inherits_from function
+"""
 
 
 def inherits_from(obj, a_class):
