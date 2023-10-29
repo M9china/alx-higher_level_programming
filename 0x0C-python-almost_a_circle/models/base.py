@@ -4,6 +4,7 @@
 """Defines class Base"""
 import json
 
+
 class Base:
     """first class"""
     __nb_objects = 0
