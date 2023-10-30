@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Rosita J Uqueio
 
 """Defines unittests for models/rectangle.py."""
 import io
