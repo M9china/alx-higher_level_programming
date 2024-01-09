@@ -9,4 +9,3 @@ if (Number.isInteger(Number(myPrint))) {
 } else {
   console.log('Missing number of occurrences');
 }
-
