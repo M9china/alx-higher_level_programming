@@ -7,6 +7,6 @@ class Rectangle {
   }
 }
 
-const myRectangle = new Rectangle(5, 2);
+const myRectangle = new Rectangle(3, 3);
 
 console.log(`width is: ${myRectangle.width}`);
