@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""task 6 modele"""
+
+"""finds peak in a list of unsorted int"""
 
 
 def find_peak(list_of_integers):
