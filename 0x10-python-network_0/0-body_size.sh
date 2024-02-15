@@ -1,3 +1,3 @@
 #!/bin/bash
-# sends a request to URL and displays the size of the response body
-size=$(curl -s -w "%{size_download}" $1 -o /dev/null); echo "$size"
+# gets the body size of a request
+curl -Is "$1" | grep -w 'Content-Length' | cut -f2 -d' '
